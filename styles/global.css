@@ -2,6 +2,8 @@
 
 :root {
     --cor-destaque: #C92071;
+    --cor-texto-cinza: #474747;
+
 }
 *{
     margin: 0;
@@ -33,5 +35,40 @@ header {
             width: 20px;
             margin-bottom: 5px;
         }   
+    }
+}
+
+main {
+    background: linear-gradient(#b5b6f2, #efefff);
+    padding: 63px 0 80px;
+    form {
+        border: solid .25px;
+        width: 315px;
+        height: 572px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 30px;
+
+        .text {
+            h1 {
+                font-size: 22px;
+                line-height: 34px;
+                color: #1f1f1f;
+                letter-spacing: 2px;
+                text-align: center;
+            }
+
+            p{
+                font-size: 14px;
+                letter-spacing: .25px;
+                color: var(--cor-texto-cinza);
+                line-height: 24px;
+                text-align: center;
+
+                a{
+                    border-bottom: solid 1px var(--cor-texto-cinza);
+                }
+            }
+        }
     }
 }
